@@ -12,6 +12,6 @@ Repositori ini berisi kumpulan tugas mata kuliah Pemrograman Web II dan proyek S
 
 2. P2: Dasar PHP
     1. Modifikasi Halaman Info Buku
-        * Tag: `info_buku_tugas.php`
+        * Tag: `60324021_MuhammadZakiMusyaffa_info_buku_tugas.php`
     2. Sistem Perhitungan Diskon Bertingkat
         * Tag: `60324021_MuhammadZakiMusyaffa_hitung_diskon_tugas.php`
