@@ -15,7 +15,7 @@
         <?php
         // Data Buku
         $judul1 = "Laravel: From Beginner to Advanced";
-        $pengarang1 = "Budi Raharjo";
+        $pengarang1 = "Sultan Agung";
         $penerbit1 = "Informatika";
         $tahun_terbit1 = 2023;
         $harga1 = 125000;
