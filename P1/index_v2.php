@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="id">
+
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,6 +23,7 @@
             h1{ color: #2c3e50; border-bottom: 3px solid #27ae60; padding-bottom: 10px;}
             .info { background: #e8f5e9; border-left: 4px solid #27ae60; padding: 12px; margin: 10px 0;}
             .server { background: #fff3cd; border-left: 4px solid #ffc107; padding: 12px; margin: 10px 0;}
+            .perpus { background: #75befa; border-left: 4px solid #83fbff; padding: 12px; margin: 10px 0;}
         </style>
     </head>
 
@@ -30,10 +32,22 @@
             <h1>Sistem Manajemen Perpustakaan</h1>
 
             <div class="info">
+                <?php
+                // Menambahkan Variabel $alamat_perpus dan $telepon_perpus
+                $alamat_perpus = "Jalan Nusa Indah 05, Gamer, Pekalongan";
+                $telepon_perpus = "089501906886";
+
+                // Menambahkan variabel $jam_buka dan $jam_tutup untuk jam operasional
+                $jam_buka = "07:00";
+                $jam_tutup = "15:00";
+                ?>
+
                 <h3>Selamat Datang!</h3>
-                <p><strong>Dibuat oleh:</strong> <?php echo "Nama Mahasiswa Anda"; ?></p>
-                <p><strong>Tanggal:</strong> <?php echo date('d F Y'); ?></p>
-                <p><strong>Waktu Server:</strong> <?php echo date('H:i:s'); ?></p>
+                <p><strong>Dibuat oleh: </strong> <?php echo "Muhammad Zaki Musyaffa"; ?></p>
+                <p><strong>Tanggal: </strong> <?php echo date('d F Y'); ?></p>
+                <p><strong>Waktu Server: </strong> <?php echo date('l, H:i:s'); ?></p>
+                <p><strong>Alamat Perpustakaan: </strong> <?php echo $alamat_perpus; ?></p>
+                <p><strong>Telepon Perpustakaan: </strong><?php echo $telepon_perpus; ?></p>
             </div>
 
             <div class="server">
@@ -45,12 +59,13 @@
 
             <?php
             // Data statis - belum dari database
-            $nama_perpus = "Perpustakaan Universitas ABC";
+            $nama_perpus = "Perpustakaan Universitas Islam Negeri K.H. Abdurrahman Wahid Pekalongan";
             $total_buku = 1250;
             $total_anggota = 450;
             $buku_dipinjam = 178;
             $buku_tersedia = $total_buku - $buku_dipinjam;
-            $persen_pinjam = round(($buku_dipinjam / $total_buku) * 100, 1);
+            $persen_pinjam = round(($buku_dipinjam / $total_anggota) * 100, 1);
+            $persen_tersedia = round(($buku_tersedia / $total_buku) * 100, 1);
             ?>
 
             <div class="info">
@@ -58,8 +73,19 @@
                 <p><strong>Total Buku:</strong> <?php echo number_format($total_buku); ?> buku</p>
                 <p><strong>Total Anggota:</strong> <?php echo number_format($total_anggota); ?> orang</p>
                 <p><strong>Sedang Dipinjam:</strong> <?php echo $buku_dipinjam; ?> buku (<?php echo $persen_pinjam; ?>%)</p>
-                <p><strong>Tersedia:</strong> <?php echo number_format($buku_tersedia); ?> buku </p>
+                <p><strong>Tersedia:</strong> <?php echo number_format($buku_tersedia); ?> buku (<?php echo $persen_tersedia; ?>%) </p>
             </div>
         </div>
+
+        <div class="card">
+            <div class="perpus">
+            <h3>Informasi Perpustakaan</h3>
+                <p><strong>Alamat Perpustakaan: </strong> <?php echo $alamat_perpus; ?></p>
+                <p><strong>Telepon Perpustakaan: </strong><?php echo $telepon_perpus; ?></p>
+                <p><strong>Jam operasional: </strong> <?php echo $jam_buka; ?> - <?php echo $jam_tutup; ?> WIB</p>
+                <p><strong>Hari Libur: </strong> Sabtu - Minggu</p>
+            </div>
+        </div>
+
     </body>
 </html>
