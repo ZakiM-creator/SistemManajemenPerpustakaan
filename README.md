@@ -27,3 +27,9 @@ P4: Array & Function
     * Tag: `array_anggota.php`
 2. Function Library untuk Anggota
     * Tag: `functions_anggota.php` dan `sistem_anggota.php`
+
+P5: Form Handling
+1. Form Registrasi Anggota
+    - tag: `P5\form_anggota.php`
+2. Sistem Pencarian Buku Lanjutan
+    - tag: `P5\search_advanced.php`
