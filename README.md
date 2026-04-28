@@ -5,31 +5,23 @@ Repositori ini berisi kumpulan tugas mata kuliah Pemrograman Web II dan proyek S
 ## Daftar Tugas (Pertemuan 1 - 16)
 
 P1: Kontrak Kuliah & Pengenalan PHP
-1. Dokumentasi Environment
-    * Tag: `index.php`
-2. Modifikasi index.php
-    * Tag: `index_v2.php`
+1. [Dokumentasi Environment](P1/index.php)
+2. [Modifikasi index.php](P1/index_v2.php)
 
 P2: Dasar PHP
-1. Modifikasi Halaman Info Buku
-    * Tag: `60324021_MuhammadZakiMusyaffa_info_buku_tugas.php`
-2. Sistem Perhitungan Diskon Bertingkat
-    * Tag: `60324021_MuhammadZakiMusyaffa_hitung_diskon_tugas.php`
+1. [Modifikasi Halaman Info Buku](P2/60324021_MuhammadZakiMusyaffa_info_buku_tugas.php)
+2. [Sistem Perhitungan Diskon Bertingkat](P2/60324021_MuhammadZakiMusyaffa_hitung_diskon_tugas.php)
 
 P3: Kontrol Alur Program
-1. Sistem Status Peminjaman
-    * Tag: `status_peminjaman.php`
-2. Loop Daftar Transaksi
-    * Tag: `daftar_transaksi.php`
+1. [Sistem Status Peminjaman](P3/status_peminjaman.php)
+2. [Loop Daftar Transaksi](P3/daftar_transaksi.php)
 
 P4: Array & Function
-1. Array Anggota Perpustakaan
-    * Tag: `array_anggota.php`
-2. Function Library untuk Anggota
-    * Tag: `functions_anggota.php` dan `sistem_anggota.php`
+1. [Array Anggota Perpustakaan](P4/array_anggota.php)
+2. [Function Library untuk Anggota](P4/functions_anggota.php)
+    * [functions_anggota](P4/functions_anggota.php)
+    * [sistem_anggota](P4/sistem_anggota.php)
 
 P5: Form Handling
-1. Form Registrasi Anggota
-    - tag: `P5\form_anggota.php`
-2. Sistem Pencarian Buku Lanjutan
-    - tag: `P5\search_advanced.php`
+1. [Form Registrasi Anggota](P5\form_anggota.php)
+2. [Sistem Pencarian Buku Lanjutan](P5\search_advanced.php)
